@@ -11,6 +11,6 @@ main =
     Html.program
         { init = init
         , update = update
-        , subscriptions = \_ -> Sub.none
+        , subscriptions = subscriptions
         , view = view
         }

@@ -1,9 +1,11 @@
 module Types exposing (..)
 
+import Keyboard
+
 
 type alias Model =
     ()
 
 
 type Msg
-    = NoOp
+    = KeyPressed Keyboard.KeyCode
