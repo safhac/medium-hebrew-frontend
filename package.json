@@ -1,4 +1,3 @@
-
 {
   "name": "medium-hebrew-frontend",
   "description": "Medium with Hebrew support ",
@@ -13,5 +12,8 @@
     "start": "elm-live src/elm/Main.elm --output=src/static/elm.js --dir=src/static --open",
     "build": "webpack",
     "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install"
+  },
+  "devDependencies": {
+    "elm-live": "^2.7.5"
   }
 }
