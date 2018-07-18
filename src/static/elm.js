@@ -8936,15 +8936,83 @@ var _user$project$Update$init = A2(
 	-1,
 	{ctor: '[]'});
 
+var _user$project$Styles_Css$titleCss = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'font-family', _1: '\'Rubik\', sans-serif'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'font-style', _1: 'normal'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'letter-spacing', _1: '0'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '42px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'margin-left', _1: '-2.63px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'line-height', _1: '1.04'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'letter-spacing', _1: '.015em'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple2', _0: 'padding-top', _1: '5px!important;'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'border', _1: 'none;'},
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Styles_Css$bodyCss = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'direction', _1: 'rtl'},
+		_1: {ctor: '[]'}
+	});
+
 var _user$project$View$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
-		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _user$project$Styles_Css$bodyCss,
+			_1: {ctor: '[]'}
+		},
 		{
 			ctor: '::',
 			_0: _elm_lang$html$Html$text(
 				_elm_lang$core$Basics$toString(model)),
-			_1: {ctor: '[]'}
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$input,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$type_('text'),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Styles_Css$titleCss,
+							_1: {ctor: '[]'}
+						}
+					},
+					{ctor: '[]'}),
+				_1: {ctor: '[]'}
+			}
 		});
 };
 
