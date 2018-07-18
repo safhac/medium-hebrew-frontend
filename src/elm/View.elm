@@ -7,4 +7,4 @@ import Types exposing (..)
 
 view : Model -> Html Msg
 view model =
-    div [] []
+    div [] [ toString model |> text ]

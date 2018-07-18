@@ -1,15 +1,15 @@
 module Main exposing (main)
 
-import Html exposing (Html)
+import Html exposing (Html, text)
+import Keyboard
 import Types exposing (..)
 import Update exposing (..)
 import View as View exposing (view)
 
 
-main : Program Never Model Msg
 main =
     Html.program
-        { init = init
+        { init = ( -1, Cmd.none )
         , update = update
         , subscriptions = subscriptions
         , view = view

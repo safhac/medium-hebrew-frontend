@@ -5,3 +5,8 @@
 ## About:
 A demo app
 *
+
+
+### Installation 
+
+`npm start`

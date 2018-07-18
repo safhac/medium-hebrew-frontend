@@ -9,7 +9,7 @@ import Types exposing (..)
 
 init : ( Model, Cmd Msg )
 init =
-    () ! []
+    -1 ! []
 
 
 
@@ -18,7 +18,7 @@ init =
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    Keyboard.presses KeyPressed
+    Keyboard.downs KeyDown
 
 
 
@@ -28,5 +28,5 @@ subscriptions model =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        KeyPressed keyCode ->
-            () ! []
+        KeyDown keyCode ->
+            keyCode ! []

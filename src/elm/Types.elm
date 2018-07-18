@@ -4,8 +4,8 @@ import Keyboard
 
 
 type alias Model =
-    ()
+    Int
 
 
 type Msg
-    = KeyPressed Keyboard.KeyCode
+    = KeyDown Keyboard.KeyCode
